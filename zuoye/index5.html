@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box{
+			width: 200px;
+			height: 200px;
+			background-color: #f00;
+			
+			top: 100px; left: 100px	;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box" v-tz></div>
+	<script src="vue.js"></script>
+	<script src="vue-resource.js"></script>
+	<script>
+		var dom=document.querySelector('.box')
+		Vue.directive('tz',{
+			
+			inserted(dom){
+				
+				dom.style.position="absolute"
+				dom.onmousedown = function(event){
+					var oldX = event.clientX - dom.offsetLeft;
+					var oldY = event.clientY - dom.offsetTop;
+					document.onmousemove = function(event){
+							var x = event.clientX - oldX;
+							var	y = event.clientY - oldY;
+							dom.style.left = x + 'px';
+							dom.style.top = y + 'px';
+							document.onmouseup = function(event){
+									dom.onmousemove = null;
+								}
+						}
+						
+				}
+			}
+		})
+		new Vue({
+			el:'#box'
+		})
+		// var oBox = document.querySelector('.box');
+		// //1 按下
+		// oBox.onmousedown = function(e){
+		// 	var ev = e || event;
+		// 	var oldX = ev.clientX - oBox.offsetLeft,
+		// 		oldY = ev.clientY - oBox.offsetTop;
+		// 	document.onmousemove = function(e){
+		// 		var ev = e || event;
+		// 		var x = ev.clientX - oldX,
+		// 			y = ev.clientY - oldY;
+		// 		oBox.style.left = x + 'px';
+		// 		oBox.style.top = y + 'px';
+		// 	}
+		// 	document.onmouseup = function(){
+		// 		document.onmousemove = null;
+		// 	}
+		// }
+	</script>
+</body>

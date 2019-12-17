@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<div style="line-height: 50px; min-height: 50px; background: #14C3A2;">
+				<a href="#/">ccc</a>
+				<a href="#/no2">vvv</a>
+				<a href="#/no3">eee</a>
+			</div>
+			<div style="min-height: 800px;">
+				<router-view></router-view>
+			</div>
+			<div style="line-height: 150px; min-height: 150px; background: #14C3A2;"></div>
+		</div>
+		<template id="no1">
+			<div>
+				ccc
+			</div>
+		</template>
+		<template id="no2">
+			<div>
+				<div style="width: 200px; min-height: 800px; border-right: 1px solid #4CAE4C; float: left;">
+					<div><a href="#/no2/">ww</a></div>
+					<div><a href="#/no2/no1">ee</a></div>
+				</div>
+				<div style="min-height: 800px;float: left;">
+					<router-view></router-view>
+				</div>
+			</div>
+		</template>
+		<template id="no3">
+			<div>
+				eees
+			</div>
+		</template>
+	</body>
+	<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vue-router.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var routes=[
+			{
+				path:'/',
+				component:{template:'#no1'}
+			},
+			{
+				path:'/no2',
+				component:{template:'#no2'},
+				children:[
+					{
+						path:'/',
+						component:{
+							template:"<p>111</p>"
+						}
+					},
+					{
+						path:'no1',
+						component:{
+							template:"<p>221</p>"
+						}
+					}
+				]
+			},
+			{
+				path:'/no3',
+				component:{template:'#no3'}
+			}
+		]
+		var router = new VueRouter({
+			routes
+		})
+		new Vue({
+			el:'#box',
+			router
+			
+		})
+	</script>
+</html>

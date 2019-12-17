@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			fu{{box}}<button type="button" @click="box++">+++</button>
+			<no :box='box' @no='box_btn'></no>
+		</div>
+		<template id="no">
+			<div>
+				zi{{no}}<button type="button" @click="btn">+++</button>
+			</div>
+		</template>
+	</body>
+	<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		vue.component('no',{
+			template:'#no',
+			props:['box'],
+			data(){
+				return{
+					no:this.box
+				}
+			},
+			methods:{
+				btn(){
+					this.no++
+					this.$emil('no',this.no)
+				}
+			}
+			watch:{
+				box(a,b){
+					this.no1=a
+				}
+			}
+		})
+		new Vue({
+			el:'#box',
+			data{
+				box=0
+			},
+			methods:{
+				box_btn(a){
+					this.box=a
+				}
+			}
+		})
+	</script>
+</html>

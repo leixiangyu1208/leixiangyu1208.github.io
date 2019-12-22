@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<title></title>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		 crossorigin="anonymous">
+
+		<script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		 crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.top img {
+				max-height: 34px;
+				height: 34px;
+			}
+
+			.nar ul li {
+				width: 20%;
+				float: left;
+				list-style-type: none;
+				color: #999999;
+				font-size: 16px;
+			}
+
+			.tp ul li {
+				width: 25%;
+				float: left;
+				list-style-type: none;
+				color: #999999;
+				font-size: 16px;
+				margin-top: 20px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #999999;
+			}
+
+			a:hover {
+				color: #e30083;
+				text-decoration: none;
+			}
+
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+
+			body {
+				background: #fff;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #f0f0f0;
+
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+
+			.swiper-button-next,
+			.swiper-button-prev {
+				background: rgba(0, 0, 0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div style="padding: 0 40px;">
+				<div style="max-width: 1280px; min-height: 60px; margin: 0 auto;">
+					<div class="top" style="width: 50%;float: left; padding:14px 0;">
+						<a href="#/"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDYvYTNkMjAyZDQ0M2I5NzNiYThiYjkyNGUzYWU3N2UzYjYucG5n.png"></a>
+					</div>
+					<div class="nar" style="width: 50%;float: left;padding:20px 0;">
+						<ul>
+							<li><a href="#/">首页</a></li>
+							<li><a href="#/no2">产品系列</a></li>
+							<li><a href="#/no3">新闻中心</a></li>
+							<li><a href="#/no4">加入我们</a></li>
+							<li><a href="#/no5">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<div style="min-height: 500px;width:1800px ; float: left;">
+					<router-view></router-view>
+				</div>
+				<div style="max-width: 1280px; min-height: 30px; margin: 0 auto;">
+					<div style="width: 100%; padding-top: 40px;float: left;">
+						<div style="width: 1191px;height: 171px;margin: auto;">
+							<div style="width: 287px;padding: 0 5px;float: left;">
+								<div style="font-size: 15px;color:#393939;"><strong>关于我们</strong></div>
+								<div><br></div>
+								<div style="font-size: 12px;color: #a9a9a9;line-height: 30px;">可视化图文内容编辑让网站制作和维护成为一件轻松的事。普通用户还是专业制作人员都能使用起飞页设计出最具专业水准的网站。</div>
+							</div>
+							<div style="width: 287px;padding: 0 5px;float: left;">
+								<div style="font-size: 15px;color:#393939;"><strong>联系我们</strong></div>
+								<div><br></div>
+								<div style="font-size: 12px;color: #a9a9a9;line-height: 30px;">咨询电话 : 4000-000-100 <br> 商务合作 : abc@abcde.com
+									<br> 联系我们 : abcd@abcde.com</div>
+							</div>
+							<div style="width: 287px;padding: 0 5px;float: left;">
+								<div style="font-size: 15px;color:#393939;"><strong>帮助与支持</strong></div>
+								<div><br></div>
+								<div style="font-size: 12px;color: #a9a9a9;line-height: 30px;">帮助中心 <br>务条款 <br> 常见问题</div>
+							</div>
+							<div style="width: 287px;padding: 0 5px;float: left;">
+								<div style="font-size: 15px;color:#393939;"><strong>关于我们</strong></div>
+								<div><br></div>
+								<div style="width: 85px;height: 89px;">
+									<img style="width: 100%;" src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS84ZjM0YTQ3OWZiZjExZWE5NzUwMmI2ZWUyYWIwODJhNS5qcGc_p_p100_p_2FYXR0YWNobWVudF9pZD0xMDg3Mw_p_p100_p_3D_p_p100_p_3D.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="width: 100%;height: 30px;padding: 15px 0 0;background: #f0f0f0;float: left;">
+					<div style="font-size: 12px;color: #808080;text-align: center;"> 版权所有 有限公司2020 地址：苏州市工业园区金鸡湖大道99号 苏ICP备0001000号</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<!--  -->
+		<template id='no1'>
+			<div>
+				<!-- 轮播图 -->
+				<div style="background: #f0f0f0;">
+					<div style="font-size: 25px; text-align: center;color: #c8c8c8;padding: 40px 0 0 0;"><a href="#/no3"><strong>主推产品</strong></a></div>
+					<div style="font-size: 14px; text-align: center;color: #c8c8c8; padding-bottom: 20px; ">PRODUCT</div>
+					<div style="width: 25px;height: 0.2px;background: #E30083;margin: 0 auto; padding: 1px 0
+					0 0 ;"></div>
+
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS9mZWQ2MDIwMDJlNmI2NGRiNWFkODQyYTA3ZTliODk4Ni5wbmc_p_p100_p_3D.png"></div>
+							<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS83NjkwMTEyZDQyMjM3ZjlhODQ5ZWM2NzQ3Y2Y4YzFhZi5wbmc_p_p100_p_3D.png"></div>
+							<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS84MGQyNjk2NjM0MmY1MzVmN2RiYTAyNjY5M2YyZDlmNy5wbmc_p_p100_p_3D.png"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<!-- 数值显示头部-->
+					<div style="font-size: 35px; text-align: center;padding: 40px 0 0 0;">
+						<h1>Um360</h1>
+					</div>
+					<div style="font-size: 14px; text-align: center;padding-bottom: 170px;">精细快速低剂量成像，高效安全扫描体验
+					</div>
+				</div>
+				<div class="shuz" style="max-width: 1280px; min-height: 220px; margin: 0 auto;background: #FFFFFF; position: relative;top: -150px;z-index: 1; padding: 40px 0;  box-shadow:-2px 0 20px -1px#CCCCCC,2px 0 20px -1px #CCCCCC; ">
+					<!-- 数值显示 -->
+					<div style="padding:0 180px 0 180px ;text-align: center;">
+						<div style="width: 25%; height: 100%; float: left; border-right: 1px solid #CCCCCC;">
+							<div style="font-family:Raleway;font-size:42px;font-weight:normal;font-style:normal;color:#aaaaaa;padding:0 0 5px 0;display:block;padding:0 0 5px 0;vertical-align:bottom;">12000+</div>
+							<div style="font-size:14px;font-weight:normal;font-style:normal;color:#aaaaaa;display:block;vertical-align:bottom;;">成功案例</div>
+						</div>
+						<div style="width: 25% ; height: 100%; float: left; border-right: 1px solid #CCCCCC;">
+							<a href="" style="font-size: 26px;">010+</a><br>
+							<a href="" style="font-size: 14px;">解决方案</a>
+						</div>
+						<div style="width: 25%; height: 100%; float: left; border-right: 1px solid #CCCCCC;">
+							<a href="" style="font-size: 26px;">200+</a><br>
+							<a href="" style="font-size: 14px;">合作伙伴</a>
+						</div>
+						<div style="width: 25%; height: 100%; float: left; border-right: 1px solid #CCCCCC;">
+							<a href="" style="font-size: 26px;">050+</a><br>
+							<a href="" style="font-size: 14px;">技术专利</a>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div>
+					<div style="font-family:tahoma;font-size:50px;font-weight:bold;font-style:normal;color:#e5e5e5;vertical-align:bottom;text-align: center;">
+						<a href="">NEWS</a>
+					</div>
+					<div style="font-size:22px;font-weight:normal;font-style:normal;color:#333333;vertical-align:bottom; text-align: center;padding-bottom: 40px;">
+						产品系列
+					</div>
+					<div style="max-width: 1280px; min-height: 300px; margin: 0 auto;">
+						<div style="max-width: 30%;min-height: 300px; margin-bottom: 0px; border-bottom: 1px solid transparent; padding: 15px; animation-delay: 0.1s; animation-name: qfyfadeInUp; visibility: visible; float: left;  padding: 40px 40px 40px 40px; border:1px solid rgba(221,221,221,1);margin-right:40px ">
+							<div style="background-color:transparent;">
+								<div style="padding-bottom:20px;font-weight:normal;color:#555555;line-height:16px; vertical-align: top; text-align:left;width:100%; ">
+									<a href="">医疗PPP有望成后起之秀 概念股早盘活跃</a>
+								</div>
+								<div style="color:#adadad;font-size:13px;font-family:微软雅黑;line-height:24px;padding-top:15px;padding-bottom:10px;">
+									<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网...</p>
+								</div>
+								<div>
+									<a href="" style=" color:#d1d1d1;font-size:13px;font-family:Raleway;padding-top:5px;padding-bottom:5px;padding-left:8px;padding-right:8px;">→</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div style="max-width: 30%;min-height: 300px; margin-bottom: 0px; border-bottom: 1px solid transparent; padding: 15px; animation-delay: 0.1s; animation-name: qfyfadeInUp; visibility: visible; float:left ; padding: 50px 40px 40px 40px; border:1px solid rgba(221,221,221,1);margin-right:40px ;">
+								<div style="background-color:transparent;">
+									<div style="padding-bottom:20px;font-weight:normal;color:#555555;line-height:16px; vertical-align: top; text-align:left;width:100%; ">
+										<a href="">医疗PPP有望成后起之秀 概念股早盘活跃</a>
+									</div>
+									<div style="color:#adadad;font-size:13px;font-family:微软雅黑;line-height:24px;padding-top:15px;padding-bottom:10px;">
+										<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网...</p>
+									</div>
+									<div>
+										<a href="" style=" color:#d1d1d1;font-size:13px;font-family:Raleway;padding-top:5px;padding-bottom:5px;padding-left:8px;padding-right:8px;">→</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div style="max-width: 30%;min-height: 300px; margin-bottom: 0px; border-bottom: 1px solid transparent; padding: 15px; animation-delay: 0.1s; animation-name: qfyfadeInUp; visibility: visible; float:left ;  padding: 50px 40px 40px 40px; border:1px solid rgba(221,221,221,1); ">
+									<div style="background-color:transparent;">
+										<div style="padding-bottom:20px;font-weight:normal;color:#555555;line-height:16px; vertical-align: top; text-align:left;width:100%; ">
+											<a href="">医疗PPP有望成后起之秀 概念股早盘活跃</a>
+										</div>
+										<div style="color:#adadad;font-size:13px;font-family:微软雅黑;line-height:24px;padding-top:15px;padding-bottom:10px;">
+											<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网...</p>
+										</div>
+										<div>
+											<a href="" style=" color:#d1d1d1;font-size:13px;font-family:Raleway;padding-top:5px;padding-bottom:5px;padding-left:8px;padding-right:8px;">→</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div>
+							<div>
+								<div style="font-family:tahoma;font-size:50px;font-weight:bold;font-style:normal;color:#e5e5e5;vertical-align:bottom;text-align: center;margin-top: 50px;">
+									<a href="">PRODUCT</a>
+								</div>
+								<div style="font-size:22px;font-weight:normal;font-style:normal;color:#333333;vertical-align:bottom; text-align: center;padding-bottom: 40px;">
+									产品系列
+								</div>
+								<div>
+									<div style="width: 1200px;height: 550px;margin: 0 auto;background:url(img/4.jpg);  background-attachment:fixed;background-repeat : repeat-y;">
+										<div style="width: 299px;height: 550px;float: left;border-right: 1px solid #ccc; background: rgba(0,0,0,0.2);">
+											<div style="height: 230px;padding-top: 120px;text-align: center;">
+												<img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDYvMDdiNzYwNTRjMjQwOWZmN2YwM2MxZTFlMjlmOTk4YTYtMjMweDIzMC5wbmc_p_p100_p_3D.png"
+												 alt="">
+											</div>
+											<div style="font-size: 18px; font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">THE
+												PROJECT</div>
+											<div style="font-size: 18px;font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">NAME
+												01</div>
+										</div>
+										<div style="width: 299px;height: 550px;float: left;border-right: 1px solid #ccc; background: rgba(0,0,0,0.2);">
+											<div style="height: 230px;padding-top: 120px;text-align: center;">
+												<img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDYvOTAxNzllOTM4ZmFhMTgzZjhiMDFjODgwZjAzNzk3NjctMjMweDIzMC5wbmc_p_p100_p_3D.png"
+												 alt="">
+											</div>
+											<div style="font-size: 18px; font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">THE
+												PROJECT</div>
+											<div style="font-size: 18px;font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">NAME
+												02</div>
+										</div>
+										<div style="width: 299px;height: 550px;float: left;border-right: 1px solid #ccc; background: rgba(0,0,0,0.2);">
+											<div style="height: 230px;padding-top: 120px;text-align: center;">
+												<img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDYvM2JlMmUyNDFkNTM4NjBmZmRkNzMzNjNiOWJiMjdjNTMtMjMweDIzMC5wbmc_p_p100_p_3D.png"
+												 alt="">
+											</div>
+											<div style="font-size: 18px; font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">THE
+												PROJECT</div>
+											<div style="font-size: 18px;font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">NAME
+												03</div>
+										</div>
+										<div style="width: 300px;height: 550px;float: left;background: rgba(0,0,0,0.2);">
+											<div style="height: 230px;padding-top: 120px;text-align: center;">
+												<img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDcvZjZmODI0YzZlNGJlZWQ1ZDI0ZmRlZGRlZDBkZmY2ZDktMjMweDIzMC5wbmc_p_p100_p_3D.png"
+												 alt="">
+											</div>
+											<div style="font-size: 18px; font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">THE
+												PROJECT</div>
+											<div style="font-size: 18px;font-family: trebuchet ms;font-weight:bold; color: #fff;text-align: center;">NAME
+												04</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		</template>
+		<template id='no2'>
+			<div>
+				<!-- 头部 -->
+				<div style="width: 100%;min-height: 400px; background-color: #f0f0f0;">
+
+					<div style="width: 1280px; min-height: 400px; margin: 0 auto; ">
+						<div style="width: 50%; float: left;">
+							<!-- 轮播图 -->
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS9mZWQ2MDIwMDJlNmI2NGRiNWFkODQyYTA3ZTliODk4Ni5wbmc_p_p100_p_3D.png"></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS83NjkwMTEyZDQyMjM3ZjlhODQ5ZWM2NzQ3Y2Y4YzFhZi5wbmc_p_p100_p_3D.png"></div>
+									<div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cDovLzU3YTdlNmFhZjJmNzgudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8wOS84MGQyNjk2NjM0MmY1MzVmN2RiYTAyNjY5M2YyZDlmNy5wbmc_p_p100_p_3D.png"></div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+						<div style="width: 50%;min-height: 400px; float: left;">
+							<div style="text-align: center; margin-top: 120px;">
+								<span style="font-size: 52px;">Um 360</span>
+								<div style="padding-top: 10px; padding-bottom: 40px;">
+									精细快速低剂量成像，高效安全扫描体验
+								</div>
+								<div style="float: left; width:100%;">
+									<img style="width: 100px;" src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDcvOTcxNDE3ZTk3OWE1ZjFiZjNhNjZkZjY1YTM4ZjY5N2UtMzAweDE1MC5wbmc_p_p100_p_3D.png"
+									 alt="">
+									<img style="width: 100px;" src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDcvYzU3ZTYxMjM3OWM0Mzg5MDdlNTFkODNjOThiNmVlMjQtMzAweDE1MC5wbmc_p_p100_p_3D.png">
+									<img style="width: 100px;" src="https://ccdn.goodq.top/caches/40c05a76d970c388d38b924930a6f580/aHR0cHM6Ly81N2E3ZTZhYWYyZjc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTcvMDcvY2M4MmZhNTU4ODJiNGNiYTdlMzk5ZmRkMGIzMjNmNTMtMzAweDE1MC5wbmc_p_p100_p_3D.png">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--  -->
+				<div style="font-family:tahoma;font-size:50px;font-weight:bold;font-style:normal;color:#e5e5e5;vertical-align:bottom;text-align: center;">PRODUCT</div>
+				<div style="font-family:微软雅黑;font-size:22px;font-weight:normal;font-style:normal;color:#333333;vertical-align:bottom;text-align: center;">产品系列</div>
+				<ul style="text-align:center; width:100%;display: table; padding-top: 30px;">
+					<li style="display: inline-block;margin-bottom:0px;"></li>
+					<li style="display: inline-block;margin-bottom:0px;text-align:center; position:relative;width:100px;"><a href="#/no2/"
+						 style="cursor:pointer;line-height:13px;display: block;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;width:100px;border-style: solid;font-family:微软雅黑; font-size:13px; background-color:#ffffff; color:#aaaaaa; border-top:1px solid rgba(226,226,226,1); border-bottom:1px solid rgba(226,226,226,1); border-left:1px solid rgba(226,226,226,1); border-right:1px solid rgba(226,226,226,1); padding:8px 0px;">全部设备</a></li>
+					<li style="display: inline-block;margin-bottom:0px;width:20px"></li>
+					<li style="display: inline-block;margin-bottom:0px;text-align:center; position:relative;width:100px;">
+						<a href="#/no2/no1" style="cursor:pointer;line-height:13px;display: block;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;width:100px;border-style: solid;font-family:微软雅黑; font-size:13px; background-color:#ffffff; color:#aaaaaa; border-top:1px solid rgba(226,226,226,1); border-bottom:1px solid rgba(226,226,226,1); border-left:1px solid rgba(226,226,226,1); border-right:1px solid rgba(226,226,226,1); padding:8px 0px;">设备分类一</a></li>
+					<li style="display: inline-block;margin-bottom:0px;width:20px"></li>
+					<li style="display: inline-block;margin-bottom:0px;text-align:center; position:relative;width:100px;"><a href="#/no2/no2"
+						 style="cursor:pointer;line-height:13px;display: block;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;width:100px;border-style: solid;font-family:微软雅黑; font-size:13px; background-color:#ffffff; color:#aaaaaa; border-top:1px solid rgba(226,226,226,1); border-bottom:1px solid rgba(226,226,226,1); border-left:1px solid rgba(226,226,226,1); border-right:1px solid rgba(226,226,226,1); padding:8px 0px;">设备分类二</a></li>
+					<li style="display: inline-block;margin-bottom:0px;width:20px"></li>
+					<li style="display: inline-block;margin-bottom:0px;text-align:center; position:relative;width:100px;">
+						<a href="#/no2/no3" style="cursor:pointer;line-height:13px;display: block;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;width:100px;border-style: solid;font-family:微软雅黑; font-size:13px; background-color:#ffffff; color:#aaaaaa; border-top:1px solid rgba(226,226,226,1); border-bottom:1px solid rgba(226,226,226,1); border-left:1px solid rgba(226,226,226,1); border-right:1px solid rgba(226,226,226,1); padding:8px 0px;">设备分类三</a></li>
+					<li style="display: inline-block;margin-bottom:0px;"></li>
+				</ul>
+				<div>
+					<router-view></router-view>
+				</div>
+			</div>
+		</template>
+		<template id='no3'>
+			<div>
+				<div style="padding-top: 60px;padding-bottom: 100px;">
+					<div style="width: 1280px;margin: 0 auto;padding: 0 20px;">
+						<div style="width: 270px;float: left;height: 117px;border: 1px  solid #e0e0e0;">
+							<div style="width: 100%;height: 37px;font-size: 14px;color: #fff;line-height: 37px; border-bottom: 1px solid #e0e0e0;background: #999999;padding-top: 2px;padding-bottom: 2px;"><i
+								 style="padding-left: 8px;padding-right: 8px;" class="iconfont">&#xe60a;</i>全部资讯<i style="float: right;padding-right: 10px;"
+								 class="iconfont">&#xe63f;</i></div>
+							<div style="width: 100%;height: 37px; line-height: 37px; border-bottom: solid 1px #E0E0E0;">
+								<a style="font-size: 13px;color: #999;" href="#/no3/">
+									<i class="iconfont" style="padding-left: 8px;">&#xe627;</i>企业动态
+								</a>
+							</div>
+							<div style="width: 100%;height: 37px; line-height: 37px;">
+								<a style="font-size: 13px;color: #999;" href="#/no3/no1">
+									<i class="iconfont" style="padding-left: 8px;">&#xe627;</i>行业资讯
+								</a>
+							</div>
+
+						</div>
+						<div style="float: left;margin-left: 43px;">
+							<router-view></router-view>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template id='no4'>
+			<div>
+				<div style="padding-top: 60px;padding-bottom: 100px;">
+					<div style="width: 1280px;margin: 0 auto;padding: 0 20px;">
+						<div style="width: 270px;float: left;height: 35px;border: 1px  solid #e0e0e0;">
+							<div style="width: 100%;height: 37px;font-size: 14px;color: #fff;line-height: 37px; border-bottom: 1px solid #e0e0e0;background: #999999;padding-top: 2px;padding-bottom: 2px;"><i
+								 style="padding-left: 8px;padding-right: 8px;" class="iconfont">&#xe60a;</i>加入我们<i style="float: right;padding-right: 10px;"
+								 class="iconfont">&#xe63f;</i></div>
+
+						</div>
+						<div style="float: left;margin-left: 43px;">
+							<router-view></router-view>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+		<template id='no5'>
+			<div>
+				<div>
+					<div style="height: 390px;margin-bottom: 80px;">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div style="height: 536px;">
+						<div style="width: 1200px;height: 380px;margin: 0 auto;">
+							<div style="width: 290px;height: 380px;float: left;padding: 0 5px;">
+								<p style="width: 267px;height: 40px;background: #999;font-size: 14px;color: #fff;line-height: 40px;margin-bottom: 30px;">
+									<span style="padding: 0 8px;" class="glyphicon glyphicon-align-justify"></span>联系我们</p>
+								<p style="height: 25px; font-size: 16px;margin-bottom: 0;">Um生物科技有限公司</p>
+								<p style="height: 24px;font-size: 14px;margin-bottom: 20px;color: #a9a9a9;">Um biotechnology Co.,Ltd</p>
+								<p style="font-size: 14px;line-height:32px; margin-bottom: 0;color: #808080;">联系电话 : 1000 8000</p>
+								<p style="font-size: 14px;line-height:32px;margin-bottom: 0; color: #808080;">销售热线：400 8888 8888</p>
+								<p style="font-size: 14px;line-height:32px;margin-bottom: 0; color: #808080;">技术服务：400 6666 6666</p>
+								<p style="font-size: 14px;line-height:32px; margin-bottom: 20px;color: #808080;">公司传真：1000 8000</p>
+								<p style="font-size: 14px;line-height:32px;margin-bottom: 30px; color: #808080;">苏州市工业园区金鸡湖大道0号某某大厦0室</p>
+								<p style="font-size: 24px;">
+									<span style="margin-right: 5px;" class="glyphicon glyphicon-time"></span>
+									<span style="margin-right: 5px;" class="glyphicon glyphicon-time"></span>
+									<span style="margin-right: 5px;" class="glyphicon glyphicon-time"></span>
+									<span style="margin-right: 5px;" class="glyphicon glyphicon-time"></span>
+									<span class="glyphicon glyphicon-time"></span>
+								</p>
+							</div>
+							<div style="width: 890px;height: 380px; float: left;padding: 0 5px;">
+								<img style="width: 100%; height: 100%;" src="img/3.jpg">
+							</div>
+						</div>
+					</div>
+
+		</template>
+	</body>
+	<script src="vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vue-router.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+</html>

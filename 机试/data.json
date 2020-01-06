@@ -1,0 +1,36 @@
+{
+  "arr": [
+    {
+      "foodnm": "猪肉白菜水饺",
+      "yuexiao": "月销18份",
+      "haopin": "好评率100%",
+      "price": 16,
+      "type": "水饺",
+      "num":0
+    },
+    {
+      "foodnm": "鲅鱼三鲜水饺",
+      "yuexiao": "月销18份",
+      "haopin": "好评率100%",
+      "price": 20,
+      "type": "水饺",
+      "num":0
+    },
+    {
+      "foodnm": "虾仁三鲜水饺",
+      "yuexiao": "月销18份",
+      "haopin": "好评率100%",
+      "price":25,
+      "type": "水饺",
+      "num":0
+    },
+    {
+      "foodnm": "南瓜皮菌菇三鲜猪肉水饺",
+      "yuexiao": "月销18份",
+      "haopin": "好评率100%",
+      "price": 24,
+      "type": "水饺",
+      "num":0
+    }
+  ]
+}
